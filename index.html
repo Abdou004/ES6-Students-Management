@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/custom.css">
+     <script src="js/script.js" defer type="module"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="app">
+            <h1>Liste Of Students</h1>
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title mb-0">Add New Student</h5>
+                        </div>
+                        <div class="card-body">
+                            <form id="createStudentForm">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="birthDate" class="form-label">Age</label>
+                                    <input type="date" step="" class="form-control" id="birthDate" name="birthDate" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="major" class="form-label">Major</label>
+                                    <input type="text" class="form-control" id="major" name="major" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="note" class="form-label">Note</label>
+                                    <input type="number" class="form-control" id="note" name="note" required>
+                                </div>
+                                <button type="submit" class="btn btn-success">Create Student</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="reloadBtn" class="btn btn-primary mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
+                    <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
+                </svg>
+                Reload
+            </button>
+            <div
+                class="table-responsive"
+            >
+                <table
+                    class="table"
+                >
+                    <thead class="table table-dark">
+                        <tr>
+                            <th scope="col" data-column="id">#ID <span class="sort-id"></span></th>
+                            <th scope="col" data-column="name">name <span class="sort-name"></span></th>
+                            <th scope="col" data-column="birthDate">age <span class="sort-birthDate"></span></th>
+                            <th scope="col" data-column="major">major <span class="sort-major"></span></th>
+                            <th scope="col" data-column="note">Note <span class="sort-note"></span></th>
+                            <th scope="col">Mark</th>
+                            <th scope="col">Operations</th>
+                        </tr>
+                    </thead>
+                    <tbody class="lise-of-students">
+                     
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "comment": "Start Watch DB : json-server --watch db.json",
+  "students": [
+    {
+      "id": "1",
+      "name": "Test",
+      "birthDate": "2001-01-01",
+      "major": "Test",
+      "note": 6
+    },
+    {
+      "id": "2",
+      "name": "Test",
+      "birthDate": "2001-01-01",
+      "major": "Test",
+      "note": 12
+    },
+    {
+      "id": "3",
+      "name": "Test",
+      "birthDate": "2008-08-08",
+      "major": "Test",
+      "note": 9
+    }
+  ]
+}
